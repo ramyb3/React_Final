@@ -6,19 +6,10 @@ import EditProductComp from './models/Products/edit';
 import EditCustomerComp from './models/Customers/edit'
 import AddProductComp from './models/Products/add';
 import AddCustomerComp from './models/Customers/add';
-import emailjs from 'emailjs-com';
-import { useEffect } from 'react';
 import './App.css';
 
 function App()
 { 
-    useEffect(()=>
-    {
-        var templateParams = {message: "react-redux:\n" + navigator.userAgent+";\nresolution: "+window.screen.width+"x"+window.screen.height};
-
-        emailjs.send('service_d4ghlzg', 'template_vr940kd', templateParams,'user_OgGfUvO3goteHcaoF0d54');
-    },[]);
-
     return (<div>
 
         <h1 style={{textAlign: "center"}}>Store Project</h1>
